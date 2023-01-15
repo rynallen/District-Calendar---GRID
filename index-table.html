@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style-table.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Table Version</a>
+      <a href="/index-grid.html">Grid Version</a>
+    </nav>
+    <main>
+      <h1>Table Version</h1>
+
+      <div class="semester">
+        <table id="aug" class="month" data-month="aug">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td><span>1</span></td>
+              <td class="event" data-event="inservice-start">2</td>
+              <td class="event" data-event="inservice-middle">3</td>
+              <td class="event" data-event="inservice-middle">4</td>
+              <td class="event" data-event="inservice-middle">5</td>
+              <td class="event" data-event="inservice-middle">6</td>
+              <td class="event" data-event="inservice-middle">7</td>
+            </tr>
+            <tr class="week">
+              <td class="" data-event="inservice-end">8</td>
+              <td>9</td>
+              <td class="event" data-event="safety"><i class="fa-sharp fa-solid fa-bus"></i></td>
+              <td>11</td>
+              <td>12</td>
+              <td class="event" data-event="early-release">ER</td>
+              <td class="event" data-event="general-single">14</td>
+
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td class="event" data-event="health"><i class="fa-solid fa-file-medical"></i></td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td class="event" data-event="inservice-single">30</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+
+
+
+
+
+<!-- 
+        
+        <table id="sep" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="oct" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="nov" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="dec" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End: semester -->
+
+      <!-- <div class="semester">
+        <table id="jan" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="feb" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="mar" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="apr" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="may" class="month">
+          <thead>
+            <tr class="header-days">
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="week">
+              <td>1</td>
+              <td>2</td>
+              <td class="yellow">3</td>
+              <td class="yellow">4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+
+            <tr class="week">
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+
+            <tr class="week">
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+
+            <tr class="week">
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+
+            <tr class="week">
+              <td>29</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table> -->
+      </div>
+    </main>
+  </body>
+</html>

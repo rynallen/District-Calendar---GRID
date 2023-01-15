@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style-grid.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Table Version</a>
+      <a href="/page2.html">Grid Version</a>
+    </nav>
+
+<main>
+
+
+
+
+    <div class="calendar-wrapper">
+      <h1 class="month" data-month="aug">Aug</h1>
+      <ol class="calendar">
+        <li class="day-name">S</li>
+        <li class="day-name">M</li>
+        <li class="day-name">T</li>
+        <li class="day-name">W</li>
+        <li class="day-name">T</li>
+        <li class="day-name">F</li>
+        <li class="day-name">S</li>
+
+
+        <!-- data-event="129-090124-inservice-start"
+        This is parsed to mean:
+        1  = Week Number (for month) - Possible values 1-5
+        29 = Week Number (for the year) - Possible values 01-52
+        09 = Date Number
+        01 = Start Day
+        24 = End Day
+        -->
+
+        <li class="empty-date-postion"></li>
+        <li class="empty-date-postion"></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li data-event="safety"><a href="" ><i class="fa-sharp fa-solid fa-bus"></i></a></li>
+        <li data-event="general-end">12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li data-event="inservice-start">18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li data-event="inservice-end">22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+      </ol>
+    </div>
+
+
+</main>
+
+  </body>
+</html>
